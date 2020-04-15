@@ -1,0 +1,84 @@
+<!--<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculate BMI</title>
+        <body>
+            <h1>Function to calculate body mass index</h1>
+
+            <input type='text' id='mass' placeholder='mass in kilograms'/>
+            <input type='text' id='height' placeholder='height in meters'/>
+            <button>Click me</button>
+
+            <script>
+                const mass = document.querySelector('#mass')
+                const height = document.querySelector('#height')
+                const button = document.querySelector('button')
+
+                let BMI
+                button.addEventListener('click', () => {
+                    BMI = mass.value / height.value ** 2
+                    alert(`your bmi is ${BMI.toFixed(2)}`)
+                    console.log(BMI)
+                })
+            </script>
+        </body>
+    </head>
+</html>-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Generating Numbers</title>
+  </head>
+
+  <body>
+    <h1 style="color: green; text-align: center;">My Javascript Project</h1>
+    <h2 style="text-align: center;">By Micheal Adeniyi</h2>
+    <div id='container'>
+        <input type='text' id ='ask'/><br>
+        <button id = 'onClick' style="background-color: green; color: white">get number</button>   
+
+    <script>
+const input = document.getElementById('ask')
+const button = document.querySelector('#onClick')
+let numbers = document.createElement('div')
+const container = document.querySelector('#container')
+
+
+for(var i = 0; i <= input.value; i++) {
+    let span = document.createElement('span')
+    span.textContent = i
+    numbers.appendChild(span)
+
+    if(i%2===0) {
+        span.style.backgroundColor = 'green'
+    } else if(i%3===0) {
+        span.style.backgroundColor = 'red'
+    } else {
+        span.style.backgroundColor = 'yellow'
+    }
+    span.style.display = 'inline-block'
+    span.style.width = '190px'
+    span.style.height = '50px'
+    span.style.margin = '1px'
+    span.style.padding = '10px'
+    span.style.textAlign = 'center'
+}
+
+document.body.appendChild(numbers)
+input.style.display = 'block'
+input.style.margin = 'auto'
+button.style.display = 'block'
+button.style.margin = 'auto'
+
+let getNumber
+button.addEventListener('click', (input) => {
+getNumber = input.tarhet[i]
+input.target.textContent
+})
+
+     
+    </script>
+  </body>
+</html>
+

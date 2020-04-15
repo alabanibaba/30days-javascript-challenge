@@ -1,0 +1,148 @@
+<!--<!DOCTYPE html>
+<html>
+    <head>
+        <title>Document Object Model Mike Type</title>
+    </head>
+<body>
+    <script>
+        let mike
+         for(let i = 0; i < 4; i++) {
+        mike = document.createElement('h1')
+        mike.className = 'title'
+        mike.id = 'list'
+        mike.style.fontSize = '20px'
+        mike.textContent = 'Hello this is a javascript created content'
+        document.body.appendChild(mike)  
+        }
+    </script>
+</body>    
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document Object Model:30 Days Of JavaScript</title>
+</head>
+
+<body>
+    <h1>Removing child Node</h1>
+    <h2>Asabeneh Yetayeh challenges in 2020</h1>
+    <ul>
+        <li>30DaysOfPython Challenge Done</li>
+        <li>30DaysOfJavaScript Challenge Done</li>
+        <li>30DaysOfReact Challenge Coming</li>
+        <li>30DaysOfFullStack Challenge Coming</li>
+        <li>30DaysOfDataAnalysis Challenge Coming</li>
+        <li>30DaysOfReactNative Challenge Coming</li>
+        <li>30DaysOfMachineLearning Challenge Coming</li>
+    </ul>
+
+    <script>
+        const ul = document.querySelector('ul')
+        const lists = document.querySelectorAll('li')
+        for(const list of lists) {
+            ul.removeChild(list)
+        }
+    </script>
+</body>
+
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Creating numbers from 1 to 100 using javascript</title>
+    </head>
+    <body>
+        <script>
+            let mike = []
+            let ade
+            for(let i = 0; i <= 101; i++) {
+                mike.push(i)
+                if((i % 2) === 1) {
+                    ade.style.backgroundColor = 'green'
+                } else if((i % 3) === 1) {
+                    ade.style.backgroundColor = 'yellow'
+                }
+
+                ade = document.createElement('div')
+                ade.className = 'numb'
+                ade.title = 'num'
+                ade.style.width = '190px'
+                ade.style.height = '50px'
+                ade.style.margin = 'auto'
+                ade.style.position = 'relative'
+                ade.style.display = 'inline-block' 
+                ade.style.padding = '1px'
+                ade.style.justifyContent = 'center'
+                ade.style.textAlign = 'center'
+                ade.textContent = mike[i]
+                ade.style.backgroundColor = 'red'
+                ade.style.border = '1px solid white'
+                document.body.appendChild(ade)
+
+            }
+            
+        </script>
+    </body>
+</html>-->
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Creating numbers from 1 to 100 using javascript</title>
+    </head>
+    <body>
+        <script>
+        let numbers = document.createElement('div')
+
+         for(var counter = 0, l = 101; counter <= l; counter++) {
+          let span = document.createElement('span')
+          span.textContent = counter 
+           numbers.appendChild(span)
+
+          if((counter % 2) === 0) {
+            span.style.backgroundColor = 'green'
+          } else {
+            span.style.backgroundColor = 'yellow'
+          } 
+          var notPrime = false;
+    for (var i = 2; i <= counter; i++) {
+        if (counter%i===0 && i!==counter) {
+            notPrime = true;
+        }
+    }
+    if (notPrime === false) {
+        span.style.backgroundColor = 'red'
+    }
+
+         span.style.display = 'inline-block'
+         span.style.width = '190px'
+         span.style.height = '50px'
+         span.style.margin = '1px'
+         span.style.padding = '5px'
+         span.style.textAlign = 'center'
+
+         }
+
+         document.body.appendChild(numbers);
+         
+        </script>
+    </body>
+</html>
+
+
+
+
+
+    
+
+
+
+

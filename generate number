@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Generating Numbers</title>
+  </head>
+
+  <body>
+    <h1 style="color: green; text-align: center;">My Javascript Project</h1>
+    <h2 style="text-align: center;">By Micheal Adeniyi</h2>
+        <input type='text' id ='ask'/><br>
+        <button id = 'onClick' style="background-color: green; color: white">get number</button>   
+
+    <script>
+const input = document.getElementById('ask')
+const button = document.querySelector('#onClick')
+let numbers = document.createElement('div')
+const container = document.querySelector('#container')
+
+for(var i = 0; i <= input.length; i++) {
+    let span = document.createElement('span')
+    
+    if(i%2===0) {
+        span.style.backgroundColor = 'green'
+    } else if(i%3===0) {
+        span.style.backgroundColor = 'red'
+    } else {
+        span.style.backgroundColor = 'yellow'
+    }
+    span.textContent = input[i]
+    numbers.appendChild(span)
+
+    span.style.display = 'inline-block'
+    span.style.width = '190px'
+    span.style.height = '50px'
+    span.style.margin = '1px'
+    span.style.padding = '10px'
+    span.style.textAlign = 'center'
+}
+
+document.body.appendChild(numbers)
+input.style.display = 'block'
+input.style.margin = 'auto'
+button.style.display = 'block'
+button.style.margin = 'auto'
+
+let generateNumb
+button.addEventListener('click', () => {
+    generateNumb = input.value[i]
+    document.write(generateNumb);
+})
+
+
+
+     
+    </script>
+  </body>
+</html>
